@@ -1,0 +1,98 @@
+:root {
+  --dark-blue: #0e1953;
+  --mid-blue: #1d54b9;
+  --light-blue: #709fd0;
+  --off-white: #faf7ed;
+  --accent-yellow: #e5ad18;
+}
+
+body {
+  background: var(--off-white);
+  color: var(--off-white);
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.container {
+  background: var(--dark-blue);
+  color: var(--off-white);
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+  color: var(--accent-yellow);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 8px;
+  background: var(--off-white);
+  color: var(--dark-blue);
+  font-size: 16px;
+}
+
+input:focus, select:focus {
+  outline: 2px solid var(--accent-yellow);
+}
+
+button {
+  background: var(--accent-yellow);
+  color: var(--dark-blue);
+  border: none;
+  padding: 14px;
+  margin-top: 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  background: var(--mid-blue);
+  color: var(--off-white);
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: normal;
+  color: var(--off-white);
+}
+
+.toggle-parent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
