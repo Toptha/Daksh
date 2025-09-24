@@ -1,16 +1,17 @@
 import { useState } from "react";
+import "./styles/visitorform.css";
 
 export default function VisitorForm({ dept }) {
   const [visitor, setVisitor] = useState({
     name: "",
     email: "",
     phone: "",
-    isParent: false,
+    isParent: null, // null by default so neither Yes nor No is selected initially
     heardFrom: [],
   });
 
   const handleSubmit = () => {
-    if (!visitor.name || !visitor.email || !visitor.phone) {
+    if (!visitor.name || !visitor.email || !visitor.phone || visitor.isParent === null) {
       alert("Please fill all fields!");
       return;
     }
@@ -18,7 +19,7 @@ export default function VisitorForm({ dept }) {
     data.push(visitor);
     localStorage.setItem(dept, JSON.stringify(data));
     alert("Visitor saved!");
-    setVisitor({ name: "", email: "", phone: "", isParent: false, heardFrom: [] });
+    setVisitor({ name: "", email: "", phone: "", isParent: null, heardFrom: [] });
   };
 
   const toggleSource = (src) => {
@@ -34,60 +35,70 @@ export default function VisitorForm({ dept }) {
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-      <div>
-        <label>Name</label>
-        <input
-          type="text"
-          value={visitor.name}
-          onChange={(e) => setVisitor({ ...visitor, name: e.target.value })}
-          placeholder="Enter full name"
-        />
-      </div>
+    <div className="visitor-form">
+      <h2>Visitor Registration</h2>
 
-      <div>
-        <label>Email</label>
-        <input
-          type="email"
-          value={visitor.email}
-          onChange={(e) => setVisitor({ ...visitor, email: e.target.value })}
-          placeholder="Enter email"
-        />
-      </div>
+      <label>Name</label>
+      <input
+        type="text"
+        value={visitor.name}
+        onChange={(e) => setVisitor({ ...visitor, name: e.target.value })}
+        placeholder="Enter full name"
+      />
 
-      <div>
-        <label>Phone</label>
-        <input
-          type="tel"
-          value={visitor.phone}
-          onChange={(e) => setVisitor({ ...visitor, phone: e.target.value })}
-          placeholder="Enter phone number"
-        />
-      </div>
+      <label>Email</label>
+      <input
+        type="email"
+        value={visitor.email}
+        onChange={(e) => setVisitor({ ...visitor, email: e.target.value })}
+        placeholder="Enter email"
+      />
 
-      <div className="toggle-parent">
-        <input
-          type="checkbox"
-          checked={visitor.isParent}
-          onChange={(e) => setVisitor({ ...visitor, isParent: e.target.checked })}
-        />
-        <label>Parent?</label>
-      </div>
+      <label>Phone</label>
+      <input
+        type="tel"
+        value={visitor.phone}
+        onChange={(e) => setVisitor({ ...visitor, phone: e.target.value })}
+        placeholder="Enter phone number"
+      />
 
-      <div>
-        <label>How did you hear about Daksh?</label>
-        <div className="checkbox-group">
-          {["Instagram", "Facebook", "Friends", "Posters"].map((src) => (
-            <label key={src}>
-              <input
-                type="checkbox"
-                checked={visitor.heardFrom.includes(src)}
-                onChange={() => toggleSource(src)}
-              />
-              {src}
-            </label>
-          ))}
+      {/* Radio buttons for "Are you a parent?" */}
+      <div className="form-radio">
+        <label>Are you a parent?</label>
+        <div className="radio-group">
+          <label>
+            <input
+              type="radio"
+              name="isParent"
+              checked={visitor.isParent === true}
+              onChange={() => setVisitor({ ...visitor, isParent: true })}
+            />
+            Yes
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="isParent"
+              checked={visitor.isParent === false}
+              onChange={() => setVisitor({ ...visitor, isParent: false })}
+            />
+            No
+          </label>
         </div>
+      </div>
+
+      <label>How did you hear about Daksh?</label>
+      <div className="checkbox-group">
+        {["Instagram", "Facebook", "Friends", "Posters"].map((src) => (
+          <label key={src} className="checkbox-item">
+            <input
+              type="checkbox"
+              checked={visitor.heardFrom.includes(src)}
+              onChange={() => toggleSource(src)}
+            />
+            {src}
+          </label>
+        ))}
       </div>
 
       <button onClick={handleSubmit}>Save Visitor</button>

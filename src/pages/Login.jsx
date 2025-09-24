@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const users = {
-  BCA: "bca123",
+  BCA: "bcapass",
   BScCS: "cspass",
   BScCM: "cmpass",
 };

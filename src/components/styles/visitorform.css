@@ -1,0 +1,139 @@
+:root {
+  --dark-blue: #0e1953;
+  --mid-blue: #1d54b9;
+  --light-blue: #709fd0;
+  --off-white: #faf7ed;
+  --accent-yellow: #e5ad18;
+}
+
+.visitor-form {
+  background: var(--dark-blue);
+  color: var(--off-white);
+  border-radius: 16px;
+  padding: 28px;
+  max-width: 480px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.visitor-form h2 {
+  text-align: center;
+  color: var(--accent-yellow);
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.visitor-form label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+/* Inputs */
+.visitor-form input[type="text"],
+.visitor-form input[type="email"],
+.visitor-form input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: var(--off-white);
+  color: var(--dark-blue);
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+.visitor-form input:focus {
+  outline: 2px solid var(--accent-yellow);
+  box-shadow: 0 0 6px rgba(229, 173, 24, 0.7);
+}
+
+/* Radio buttons for parent question */
+.form-radio {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.radio-group input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--accent-yellow);
+}
+
+/* Heard about us checkboxes */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.checkbox-item input {
+  margin: 0;
+}
+
+.checkbox-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Save button */
+button {
+  background: var(--accent-yellow);
+  color: var(--dark-blue);
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: var(--mid-blue);
+  color: var(--off-white);
+  box-shadow: 0 4px 12px rgba(29, 84, 185, 0.5);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
