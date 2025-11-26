@@ -12,8 +12,8 @@ export default defineConfig({
         short_name: 'Visitors',
         start_url: '/',
         display: 'standalone',
-        background_color: '#ffffff',
-        theme_color: '#ffffff',
+        background_color: 'rgba(29, 84, 185, 0.5)',
+        theme_color: 'rgba(29, 84, 185, 0.5)',
         icons: []
       }
     })
