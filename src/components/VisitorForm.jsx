@@ -6,7 +6,7 @@ export default function VisitorForm({ dept }) {
     name: "",
     email: "",
     phone: "",
-    isParent: null, // null by default so neither Yes nor No is selected initially
+    isParent: null, 
     heardFrom: [],
   });
 
@@ -89,7 +89,7 @@ export default function VisitorForm({ dept }) {
 
       <label>How did you hear about Daksh?</label>
       <div className="checkbox-group">
-        {["Instagram", "Facebook", "Friends", "Posters"].map((src) => (
+        {["Instagram", "LinkedIn", "Friends", "Posters", "The Hindu Newspaper"].map((src) => (
           <label key={src} className="checkbox-item">
             <input
               type="checkbox"

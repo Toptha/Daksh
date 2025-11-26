@@ -87,16 +87,23 @@
   margin-top: 6px;
 }
 
+/* Option A: single-line pills, truncate long text */
 .checkbox-item {
   display: flex;
   align-items: center;
-  gap: 6px;
-  background: rgba(255, 255, 255, 0.1);
+  gap: 8px;
+  background: rgba(255,255,255,0.08);
   padding: 6px 12px;
   border-radius: 8px;
   transition: background 0.2s ease;
   cursor: pointer;
+
+  white-space: nowrap;       /* prevent wrapping */
+  overflow: hidden;          /* required for ellipsis */
+  text-overflow: ellipsis;   /* show ... for long text */
+  max-width: 100%;
 }
+
 
 .checkbox-item input {
   margin: 0;
