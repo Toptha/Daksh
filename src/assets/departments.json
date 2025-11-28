@@ -1,0 +1,330 @@
+{
+  "bba_honours_research_sbm": {
+    "label": "Bachelor of Business Administration (BBA) (Honours/ Honours with Research), School of Business and Management",
+    "password": "bba_honours_research_sbm_pass"
+  },
+  "bba_decision_science": {
+    "label": "Bachelor of Business Administration (BBA)- Decision Science",
+    "password": "bba_decision_science_pass"
+  },
+  "bba_marketing_tourism_honours": {
+    "label": "Bachelors of Business Administration (BBA) (Marketing and Tourism/Honours/Honours with Research)",
+    "password": "bba_marketing_tourism_honours_pass"
+  },
+  "bba_finance_international_honours": {
+    "label": "Bachelors of Business Administration (BBA) (Finance and International Business/ Honours/Honours with Research)",
+    "password": "bba_finance_international_honours_pass"
+  },
+  "bba_finance_marketing_analytics_byc": {
+    "label": "BBA (Finance and Marketing Analytics), School of Business and Management BYC",
+    "password": "bba_finance_marketing_analytics_byc_pass"
+  },
+  "bba_strategy_business_analytics_honours": {
+    "label": "Bachelors of Business Administration (BBA) (Strategy and Business Analytics/Honours/Honours with Research)",
+    "password": "bba_strategy_business_analytics_honours_pass"
+  },
+  "bba_finance_economics_honours": {
+    "label": "Bachelors of Business Administration (BBA) (Finance and Economics/Honours/Honours with Research)",
+    "password": "bba_finance_economics_honours_pass"
+  },
+  "mba_sbm_pg": {
+    "label": "Master of Business Administration (MBA), School of Business and Management (PG)",
+    "password": "mba_sbm_pg_pass"
+  },
+  "mba_executive_sbm_pg": {
+    "label": "Master of Business Administration (MBA) - Executive, School of Business and Management (PG)",
+    "password": "mba_executive_sbm_pg_pass"
+  },
+  "bhm": {
+    "label": "BHM (Bachelor's of Hotel Management)",
+    "password": "bhm_pass"
+  },
+  "department_of_commerce_ug": {
+    "label": "Department of Commerce - UG",
+    "password": "department_of_commerce_ug_pass"
+  },
+  "department_of_commerce_pg": {
+    "label": "Department of Commerce - PG",
+    "password": "department_of_commerce_pg_pass"
+  },
+  "department_of_professional_studies_ug": {
+    "label": "Department of Professional Studies- UG",
+    "password": "department_of_professional_studies_ug_pass"
+  },
+  "department_of_professional_studies_pg": {
+    "label": "Department of Professional Studies - PG",
+    "password": "department_of_professional_studies_pg_pass"
+  },
+  "department_of_media_studies_ug": {
+    "label": "Department of Media Studies (Undergraduate Programmes)",
+    "password": "department_of_media_studies_ug_pass"
+  },
+  "department_of_media_studies_pg": {
+    "label": "Department of Media Studies (Postgraduate Programmes)",
+    "password": "department_of_media_studies_pg_pass"
+  },
+  "ma_english_with_communication_studies": {
+    "label": "MA English with Communication Studies",
+    "password": "ma_english_with_communication_studies_pass"
+  },
+  "department_of_performing_arts_theatre_music": {
+    "label": "Department of Performing Arts, Theatre Studies and Music",
+    "password": "department_of_performing_arts_theatre_music_pass"
+  },
+  "school_of_psychological_sciences_ug": {
+    "label": "School Of Psychological Sciences (Undergraduate)",
+    "password": "school_of_psychological_sciences_ug_pass"
+  },
+  "school_of_psychological_sciences_pg": {
+    "label": "School of Psychological Sciences (PG)",
+    "password": "school_of_psychological_sciences_pg_pass"
+  },
+  "school_of_law_ug_pg": {
+    "label": "School Of Law ( UG & PG )BA LLB /BBA LLB (Honours) LLM (CAL/CCL/IPL)",
+    "password": "school_of_law_ug_pg_pass"
+  },
+  "kengeri_campus_stall": {
+    "label": "Kengeri Campus stall",
+    "password": "kengeri_campus_stall_pass"
+  },
+  "school_of_architecture_ug": {
+    "label": "School of Architecture - UG",
+    "password": "school_of_architecture_ug_pass"
+  },
+  "school_of_architecture_pg": {
+    "label": "School of Architecture - PG",
+    "password": "school_of_architecture_pg_pass"
+  },
+  "department_of_civil_engineering": {
+    "label": "Department of Civil Engineering",
+    "password": "department_of_civil_engineering_pass"
+  },
+  "department_of_computer_science_and_engineering": {
+    "label": "Department of Computer Science and Engineering",
+    "password": "department_of_computer_science_and_engineering_pass"
+  },
+  "department_of_ai_ml_ds": {
+    "label": "Department of Artificial Intelligence, Machine Learning and Data Science",
+    "password": "department_of_ai_ml_ds_pass"
+  },
+  "department_of_mechanical_and_automobile_engineering": {
+    "label": "Department of Mechanical and Automobile Engineering",
+    "password": "department_of_mechanical_and_automobile_engineering_pass"
+  },
+  "center_of_excellence": {
+    "label": "Center of Exellence",
+    "password": "center_of_excellence_pass"
+  },
+  "department_of_electrical_and_electronics_engineering": {
+    "label": "Department of Electrical and Electronics Engineering",
+    "password": "department_of_electrical_and_electronics_engineering_pass"
+  },
+  "department_of_electronics_and_communication_engineering": {
+    "label": "Department of Electronics and Communication Engineering",
+    "password": "department_of_electronics_and_communication_engineering_pass"
+  },
+  "dept_international_studies_political_science_history_pg": {
+    "label": "Department of International Studies, Political Science and History (PG)",
+    "password": "dept_international_studies_political_science_history_pg_pass"
+  },
+  "dept_international_studies_political_science_history_ug": {
+    "label": "Department of International Studies, Political Science and History (UG)",
+    "password": "dept_international_studies_political_science_history_ug_pass"
+  },
+  "pune_lavasa_campus": {
+    "label": "Pune Lavasa Campus",
+    "password": "pune_lavasa_campus_pass"
+  },
+  "delhi_ncr_campus": {
+    "label": "Delhi-NCR Campus",
+    "password": "delhi_ncr_campus_pass"
+  },
+  "department_of_sociology": {
+    "label": "Department of Sociology",
+    "password": "department_of_sociology_pass"
+  },
+  "department_of_social_work": {
+    "label": "Department of Social Work",
+    "password": "department_of_social_work_pass"
+  },
+  "school_of_education": {
+    "label": "School of Education",
+    "password": "school_of_education_pass"
+  },
+  "office_of_admissions": {
+    "label": "Office of Admissions",
+    "password": "office_of_admissions_pass"
+  },
+  "centre_for_online_education": {
+    "label": "Centre for Online Education",
+    "password": "centre_for_online_education_pass"
+  },
+  "department_of_computer_science_ug": {
+    "label": "Department of Computer Science - UG",
+    "password": "department_of_computer_science_ug_pass"
+  },
+  "department_of_computer_science_pg": {
+    "label": "Department of Computer Science - PG",
+    "password": "department_of_computer_science_pg_pass"
+  },
+  "department_of_statistics_and_data_science_ug": {
+    "label": "Department of Statistics and Data Science - UG",
+    "password": "department_of_statistics_and_data_science_ug_pass"
+  },
+  "department_of_statistics_and_data_science_pg": {
+    "label": "Department of Statistics and Data Science - PG",
+    "password": "department_of_statistics_and_data_science_pg_pass"
+  },
+  "department_of_life_sciences_ug": {
+    "label": "Department of Life Sciences - UG",
+    "password": "department_of_life_sciences_ug_pass"
+  },
+  "department_of_life_sciences_pg": {
+    "label": "Department of Life Sciences - PG",
+    "password": "department_of_life_sciences_pg_pass"
+  },
+  "department_of_physics_and_electronics": {
+    "label": "Department of Physics & Electronics",
+    "password": "department_of_physics_and_electronics_pass"
+  },
+  "department_of_mathematics": {
+    "label": "Department of Mathematics",
+    "password": "department_of_mathematics_pass"
+  },
+  "department_of_chemistry": {
+    "label": "Department of Chemistry",
+    "password": "department_of_chemistry_pass"
+  },
+  "centre_for_academic_and_professional_support_caps": {
+    "label": "Centre for Academic and Professional Support - CAPS",
+    "password": "centre_for_academic_and_professional_support_caps_pass"
+  },
+  "nep_sarathi_office_of_registrar_academics": {
+    "label": "NEP SARATHI - Office of Registrar(Academics)",
+    "password": "nep_sarathi_office_of_registrar_academics_pass"
+  },
+  "christ_junior_college": {
+    "label": "Christ junior college",
+    "password": "christ_junior_college_pass"
+  },
+  "peer_education_system": {
+    "label": "Peer Education System",
+    "password": "peer_education_system_pass"
+  },
+  "centre_for_counselling_and_health_services": {
+    "label": "Centre for Counselling and Health Services",
+    "password": "centre_for_counselling_and_health_services_pass"
+  },
+  "national_cadet_corps": {
+    "label": "National Cadet Corps",
+    "password": "national_cadet_corps_pass"
+  },
+  "department_of_physical_education": {
+    "label": "Department of Physical Education",
+    "password": "department_of_physical_education_pass"
+  },
+  "student_welfare_office": {
+    "label": "Student Welfare Office",
+    "password": "student_welfare_office_pass"
+  },
+  "centre_for_service_learning": {
+    "label": "Centre for Service Learning",
+    "password": "centre_for_service_learning_pass"
+  },
+  "centre_for_publications": {
+    "label": "Centre For Publications",
+    "password": "centre_for_publications_pass"
+  },
+  "vignette_windows": {
+    "label": "Vignette Windows",
+    "password": "vignette_windows_pass"
+  },
+  "office_of_international_affairs": {
+    "label": "Office of International Affairs",
+    "password": "office_of_international_affairs_pass"
+  },
+  "centre_for_placement_and_career_guidance": {
+    "label": "Centre for Placement and Career Guidance",
+    "password": "centre_for_placement_and_career_guidance_pass"
+  },
+  "office_of_tcls": {
+    "label": "Office of TCLS",
+    "password": "office_of_tcls_pass"
+  },
+  "christites_for_climate_action_cca": {
+    "label": "Christites for Climate Action (CCA)",
+    "password": "christites_for_climate_action_cca_pass"
+  },
+  "christ_consultancy": {
+    "label": "CHRIST Consultancy",
+    "password": "christ_consultancy_pass"
+  },
+  "christ_incubation_centre": {
+    "label": "CHRIST Incubation Centre",
+    "password": "christ_incubation_centre_pass"
+  },
+  "office_of_alumni_engagement": {
+    "label": "Office of Alumni Engagement",
+    "password": "office_of_alumni_engagement_pass"
+  },
+  "centre_for_social_action_csa": {
+    "label": "Centre for Social Action (CSA)",
+    "password": "centre_for_social_action_csa_pass"
+  },
+  "sustainable_development_goals_cell": {
+    "label": "Sustainable Development Goals Cell",
+    "password": "sustainable_development_goals_cell_pass"
+  },
+  "department_of_economics_ug": {
+    "label": "Department of Economics (Undergraduate Programmes)",
+    "password": "department_of_economics_ug_pass"
+  },
+  "department_of_economics_pg": {
+    "label": "Department of Economics (Postgraduate Programmes)",
+    "password": "department_of_economics_pg_pass"
+  },
+  "bsc_psychology_honours": {
+    "label": "B.Sc Psychology (Honours/Honours with Research)",
+    "password": "bsc_psychology_honours_pass"
+  },
+  "department_of_languages": {
+    "label": "Department of Languages",
+    "password": "department_of_languages_pass"
+  },
+  "bangalore_yeshwanthpur_campus": {
+    "label": "Bangalore Yeshwanthpur Campus",
+    "password": "bangalore_yeshwanthpur_campus_pass"
+  },
+  "english_and_cultural_studies_yeshwanthpur": {
+    "label": "English and Cultural Studies, Yeshwanthpur",
+    "password": "english_and_cultural_studies_yeshwanthpur_pass"
+  },
+  "bangalore_bannerghatta_road_campus": {
+    "label": "Bangalore Bannerghatta Road Campus",
+    "password": "bangalore_bannerghatta_road_campus_pass"
+  },
+  "ba_political_science_honours": {
+    "label": "Bachelor of Arts (Political Science/Honours/Honours with Research)",
+    "password": "ba_political_science_honours_pass"
+  },
+  "ba_liberal_arts_honours": {
+    "label": "BA Liberal Arts (Honours/Honours with Research)",
+    "password": "ba_liberal_arts_honours_pass"
+  },
+  "bsc_economics_with_data_science_honours": {
+    "label": "BSC (Economics with Data Science/ Honours/ Honours with Research)",
+    "password": "bsc_economics_with_data_science_honours_pass"
+  },
+  "ba_english_honours_ma_english_cultural_studies": {
+    "label": "BA (English / Honours / Honours with Research) and MA English and Cultural Studies",
+    "password": "ba_english_honours_ma_english_cultural_studies_pass"
+  },
+  "centre_for_peace_praxis": {
+    "label": "Centre for Peace Praxis",
+    "password": "centre_for_peace_praxis_pass"
+  },
+  "dreams": {
+    "label": "DREAMS",
+    "password": "dreams_pass"
+  }
+}
