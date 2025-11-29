@@ -1,25 +1,47 @@
-import { useState } from "react";
+// src/components/VisitorForm.jsx
+import { useState, useEffect } from "react";
 import "./styles/visitorform.css";
 
-export default function VisitorForm({ dept }) {
+export default function VisitorForm({ dept, deptLabel }) {
+  useEffect(() => {
+    console.log("VisitorForm mounted:", dept);
+  }, [dept]);
+
   const [visitor, setVisitor] = useState({
     name: "",
     email: "",
     phone: "",
-    isParent: null, 
+    isParent: null,
     heardFrom: [],
   });
 
   const handleSubmit = () => {
-    if (!visitor.name || !visitor.email || !visitor.phone || visitor.isParent === null) {
+    if (
+      !visitor.name ||
+      !visitor.email ||
+      !visitor.phone ||
+      visitor.isParent === null
+    ) {
       alert("Please fill all fields!");
       return;
     }
-    const data = JSON.parse(localStorage.getItem(dept)) || [];
-    data.push(visitor);
-    localStorage.setItem(dept, JSON.stringify(data));
-    alert("Visitor saved!");
-    setVisitor({ name: "", email: "", phone: "", isParent: null, heardFrom: [] });
+
+    try {
+      const data = JSON.parse(localStorage.getItem(dept)) || [];
+      data.push(visitor);
+      localStorage.setItem(dept, JSON.stringify(data));
+      alert("Visitor saved!");
+
+      setVisitor({
+        name: "",
+        email: "",
+        phone: "",
+        isParent: null,
+        heardFrom: [],
+      });
+    } catch (err) {
+      alert("Saving failed");
+    }
   };
 
   const toggleSource = (src) => {
@@ -36,14 +58,13 @@ export default function VisitorForm({ dept }) {
 
   return (
     <div className="visitor-form">
-      <h2>Visitor Registration</h2>
+      <h2>{deptLabel ? `${deptLabel} — Visitor Registration` : "Visitor Registration"}</h2>
 
       <label>Name</label>
       <input
         type="text"
         value={visitor.name}
         onChange={(e) => setVisitor({ ...visitor, name: e.target.value })}
-        placeholder="Enter full name"
       />
 
       <label>Email</label>
@@ -51,7 +72,6 @@ export default function VisitorForm({ dept }) {
         type="email"
         value={visitor.email}
         onChange={(e) => setVisitor({ ...visitor, email: e.target.value })}
-        placeholder="Enter email"
       />
 
       <label>Phone</label>
@@ -59,10 +79,8 @@ export default function VisitorForm({ dept }) {
         type="tel"
         value={visitor.phone}
         onChange={(e) => setVisitor({ ...visitor, phone: e.target.value })}
-        placeholder="Enter phone number"
       />
 
-      {/* Radio buttons for "Are you a parent?" */}
       <div className="form-radio">
         <label>Are you a parent?</label>
         <div className="radio-group">
@@ -75,6 +93,7 @@ export default function VisitorForm({ dept }) {
             />
             Yes
           </label>
+
           <label>
             <input
               type="radio"
@@ -90,7 +109,7 @@ export default function VisitorForm({ dept }) {
       <label>How did you hear about Daksh?</label>
       <div className="checkbox-group">
         {["Instagram", "LinkedIn", "Friends", "Posters", "The Hindu Newspaper"].map((src) => (
-          <label key={src} className="checkbox-item">
+          <label key={src}>
             <input
               type="checkbox"
               checked={visitor.heardFrom.includes(src)}
